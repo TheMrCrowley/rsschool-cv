@@ -34,3 +34,11 @@ function bmi(weight, height) {
   return bmi <= 18.5 ? 'Underweight': bmi <= 25 ? 'Normal': bmi <= 30 ? 'Overweight': 'Obese';
 }
 ```
+
+# Education
+
+* **Belarusian National Technical University**
+    * Micro- and nanosystem technology
+* **Udemy**
+    * [HTML/CSS](https://www.udemy.com/course/webdeveloper/)
+    * [JavaScript (in process...)](https://www.udemy.com/course/javascript_full/)
