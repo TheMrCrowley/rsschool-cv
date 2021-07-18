@@ -23,3 +23,14 @@ I am 23 years old, I work as a design engineer. I think that my actual job will 
 * JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript)
 * Git/GitHub
 * Avocode, Zeplin, Photoshop
+
+# Code Examples
+
+```
+function bmi(weight, height) {
+
+  const bmi = weight/(height*height);
+  
+  return bmi <= 18.5 ? 'Underweight': bmi <= 25 ? 'Normal': bmi <= 30 ? 'Overweight': 'Obese';
+}
+```
