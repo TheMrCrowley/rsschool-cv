@@ -15,3 +15,11 @@ I am 23 years old, I work as a design engineer. I think that my actual job will 
     * Team playing
 
 > **Keep learning...**
+
+# Skills
+
+* HTML
+* CSS (Bootstrap, SASS/SCSS, BEM)
+* JavaScript (Fundamentals, ES6+, DOM, JSON, Asynchronous JavaScript)
+* Git/GitHub
+* Avocode, Zeplin, Photoshop
