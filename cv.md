@@ -42,3 +42,8 @@ function bmi(weight, height) {
 * **Udemy**
     * [HTML/CSS](https://www.udemy.com/course/webdeveloper/)
     * [JavaScript (in process...)](https://www.udemy.com/course/javascript_full/)
+
+# Languages
+
+* **Russian** - native speaker.
+* **English** - A2 (B1 in process...)
