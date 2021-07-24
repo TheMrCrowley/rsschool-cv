@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+*
+    box-sizing: border-box
+
+h2
+    font-size: 24px
+    font-weight: 600
+    text-transform: uppercase
+
+h3
+    font-size: 20px
+    text-transform: uppercase
+    margin: 0
+    margin-bottom: 10px
+
+a
+    display: block
+    text-decoration: none
+    color: #fecb00
+    margin-bottom: 12px
+
+body
+    background-color: #111
+
+
+.container
+    width: 1000px
+    height: 100%
+    margin: 0 auto
+    display: flex
+    .aside
+        width: 30%
+        background-color: #202026
+        font-family: Montserrat
+        color: #fff
+        img
+            display: block
+            width: 100%
+            margin-bottom: 40px
+        .education
+            margin-left: 50px
+            margin-bottom: 40px
+            &__place
+                font-weight: 600
+                font-size: 20px
+            &__descr
+                padding-left: 20px
+                font-size: 16px
+                font-weight: 500
+                a
+                    transition: 0.5s all
+                    position: relative
+                    &::before
+                        content: ''
+                        display: block
+                        height: 32px
+                        width: 5px
+                        position: absolute
+                        left: -70px
+                        top: -8px
+                        background-color: #fecb00
+                        transition: 0.5s all                      
+                    &:hover
+                        color: #fff
+                        &::before
+                            width: 60px
+        .contacts
+            margin-left: 50px
+            margin-bottom: 40px
+            &__wrapper
+                padding-left: 20px
+                list-style: none
+            a
+                transition: 0.5s all
+                &:hover
+                    color: #fff
+            &__phone,
+            &__telegram,
+            &__e-mail
+                position: relative
+                transition: 0.5s all
+                &::before
+                    content: ''
+                    display: block
+                    height: 32px
+                    width: 5px
+                    position: absolute
+                    left: -70px
+                    top: -8px
+                    background-color: #fecb00
+                    transition: 0.5s all
+                &:hover
+                    &::before
+                        width: 60px
+        .skills
+            margin-left: 50px
+            &__list
+                list-style: none
+                padding: 0
+                color: #fecb00
+                line-height: 35px
+                li
+                    padding-left: 40px
+                    background-repeat: no-repeat
+                    background-size: 30px
+                    background-position: left center
+            &__html
+                background-image: url("../img/icons/html.svg")
+            &__css
+                background-image: url("../img/icons/css.svg")
+            &__sass
+                background-image: url("../img/icons/sass.svg")
+            &__bootstrap
+                background-image: url("../img/icons/bootstrap.svg")
+            &__javascript
+                background-image: url("../img/icons/javascript.svg")
+            &__github                
+                background-image: url("../img/icons/github.svg")
+            &__figma
+                background-image: url("../img/icons/figma.svg")
+               
+.main
+    width: 70%
+    font-family: Montserrat
+    color: #2d2d2d
+    padding-top: 70px
+    background-color: #fff
+    .header
+        width: 100%
+        height: 200px
+        background-color: #fecb00
+        padding: 65px 50px
+        text-transform: uppercase
+        margin-bottom: 50px
+        .name
+            font-size: 47px
+            font-weight: 600
+            span
+                font-weight: 800
+        .prof
+            font-size: 20px
+            font-weight: 500
+    &__wrapper
+        padding: 0px 60px
+        .about
+            font-size: 16px
+            line-height: 28px
+            &__descr
+                text-align: justify
+            &__strengths
+                padding: 0
+                list-style: circle
+                li
+                    margin-left: 40px
+            &__languages
+                padding: 0
+                list-style: circle
+                li
+                    margin-left: 40px                
+            .quote
+                text-align: center
+                font-size: 20px
+                font-weight: 600
+                position: relative
+                a
+                    color: #2d2d2d
+                &::before
+                    content: ''
+                    display: block
+                    width: 5px
+                    height: 32px
+                    position: absolute
+                    left: -60px
+                    top: -2px
+                    background-color: #fecb00
+                    transition: 0.5s all
+                &::after
+                    content: ''
+                    display: block
+                    width: 5px
+                    height: 32px
+                    position: absolute
+                    right: -60px
+                    top: -2px
+                    background-color: #fecb00
+                    transition: 0.5s all
+                &:hover
+                    &::before
+                        width: 250px
+                    &::after
+                        width: 250px
+        .code-example
+            line-height: 10px
+            code
+                position: relative
+                left: -200px
+    .footer
+        height: 200px
+        background-color: #fecb00
+        display: flex
+        align-items: center
+        justify-content: space-around
+        div
+            height: 100px
+            img
+                display: block
+                margin: 0 auto
+                height: 100px
+        .date
+            font-size: 25px
+            font-weight: 600
+                
+            
+
+
+        
+
+
+
+.divider_yellow
+    display: block
+    height: 2px
+    background-color: #fecb00
+    margin-bottom: 1em
+
+.divider_black
+    display: block
+    height: 2px
+    background-color: #2d2d2d
+    margin: 20px 0px
