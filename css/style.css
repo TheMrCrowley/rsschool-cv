@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fecb00;
+  margin-bottom: 12px;
+}
+
+body {
+  background-color: #111;
+}
+
+.container {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .aside {
+  width: 30%;
+  background-color: #202026;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+.container .aside img {
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.container .aside .education {
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.container .aside .education__place {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.container .aside .education__descr {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container .aside .education__descr a {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  position: relative;
+}
+
+.container .aside .education__descr a::before {
+  content: '';
+  display: block;
+  height: 32px;
+  width: 5px;
+  position: absolute;
+  left: -70px;
+  top: -8px;
+  background-color: #fecb00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .aside .education__descr a:hover {
+  color: #fff;
+}
+
+.container .aside .education__descr a:hover::before {
+  width: 60px;
+}
+
+.container .aside .contacts {
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.container .aside .contacts__wrapper {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.container .aside .contacts a {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .aside .contacts a:hover {
+  color: #fff;
+}
+
+.container .aside .contacts__phone, .container .aside .contacts__telegram, .container .aside .contacts__e-mail {
+  position: relative;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .aside .contacts__phone::before, .container .aside .contacts__telegram::before, .container .aside .contacts__e-mail::before {
+  content: '';
+  display: block;
+  height: 32px;
+  width: 5px;
+  position: absolute;
+  left: -70px;
+  top: -8px;
+  background-color: #fecb00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.container .aside .contacts__phone:hover::before, .container .aside .contacts__telegram:hover::before, .container .aside .contacts__e-mail:hover::before {
+  width: 60px;
+}
+
+.container .aside .skills {
+  margin-left: 50px;
+}
+
+.container .aside .skills__list {
+  list-style: none;
+  padding: 0;
+  color: #fecb00;
+  line-height: 35px;
+}
+
+.container .aside .skills__list li {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left center;
+}
+
+.container .aside .skills__html {
+  background-image: url("../img/icons/html.svg");
+}
+
+.container .aside .skills__css {
+  background-image: url("../img/icons/css.svg");
+}
+
+.container .aside .skills__sass {
+  background-image: url("../img/icons/sass.svg");
+}
+
+.container .aside .skills__bootstrap {
+  background-image: url("../img/icons/bootstrap.svg");
+}
+
+.container .aside .skills__javascript {
+  background-image: url("../img/icons/javascript.svg");
+}
+
+.container .aside .skills__github {
+  background-image: url("../img/icons/github.svg");
+}
+
+.container .aside .skills__figma {
+  background-image: url("../img/icons/figma.svg");
+}
+
+.main {
+  width: 70%;
+  font-family: Montserrat;
+  color: #2d2d2d;
+  padding-top: 70px;
+  background-color: #fff;
+}
+
+.main .header {
+  width: 100%;
+  height: 200px;
+  background-color: #fecb00;
+  padding: 65px 50px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.main .header .name {
+  font-size: 47px;
+  font-weight: 600;
+}
+
+.main .header .name span {
+  font-weight: 800;
+}
+
+.main .header .prof {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main__wrapper {
+  padding: 0px 60px;
+}
+
+.main__wrapper .about {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.main__wrapper .about__descr {
+  text-align: justify;
+}
+
+.main__wrapper .about__strengths {
+  padding: 0;
+  list-style: circle;
+}
+
+.main__wrapper .about__strengths li {
+  margin-left: 40px;
+}
+
+.main__wrapper .about__languages {
+  padding: 0;
+  list-style: circle;
+}
+
+.main__wrapper .about__languages li {
+  margin-left: 40px;
+}
+
+.main__wrapper .about .quote {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.main__wrapper .about .quote a {
+  color: #2d2d2d;
+}
+
+.main__wrapper .about .quote::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  left: -60px;
+  top: -2px;
+  background-color: #fecb00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.main__wrapper .about .quote::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 32px;
+  position: absolute;
+  right: -60px;
+  top: -2px;
+  background-color: #fecb00;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.main__wrapper .about .quote:hover::before {
+  width: 250px;
+}
+
+.main__wrapper .about .quote:hover::after {
+  width: 250px;
+}
+
+.main__wrapper .code-example {
+  line-height: 10px;
+}
+
+.main__wrapper .code-example code {
+  position: relative;
+  left: -200px;
+}
+
+.main .footer {
+  height: 200px;
+  background-color: #fecb00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .footer div {
+  height: 100px;
+}
+
+.main .footer div img {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.main .footer .date {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.divider_yellow {
+  display: block;
+  height: 2px;
+  background-color: #fecb00;
+  margin-bottom: 1em;
+}
+
+.divider_black {
+  display: block;
+  height: 2px;
+  background-color: #2d2d2d;
+  margin: 20px 0px;
+}
+/*# sourceMappingURL=style.css.map */
