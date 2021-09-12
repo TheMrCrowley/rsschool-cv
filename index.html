@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Denis Mythnik CV</title>
 </head>
 <body>
     <div class="container">
+        <header class="header">
+            <div class="header__photo"><img src="img/photo.png" alt="photo"></div>
+            <div class="header__descr">                
+                <div class="name">
+                    <span>Denis</span> Mythnik
+                </div>
+                <div class="prof">
+                    future front-end developer
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
         <aside class="aside">
-            <div class="aside__photo"><img src="img/photo.png" alt="photo"></div>
             <section class="education">
                 <h2>Education</h2>
                 <div class="divider_yellow"></div>
@@ -28,15 +41,13 @@
                         <a href="https://www.udemy.com/course/javascript_full/" target="_blank">JavaScript (in proccess...)</a>
                     </p>
                 </div>
-            </section>
-            <section class="contacts">
-                <h2>Contacts</h2>
-                <div class="divider_yellow"></div>
-                <ul class="contacts__wrapper">
-                    <li class="contacts__phone"><a href="tel:+375299879647" target="_blank">+375 29 987-96-47</a></li>
-                    <li class="contacts__e-mail"><a href="mailto:denisthecrowley@gmail.com" target="_blank">G-Mail</a></li>
-                    <li class="contacts__telegram"><a href="https://t.me/sasukevernisvderevny" target="_blank">Telegram</a></li>
-                </ul>
+                <div class="education__place">
+                    RS School
+                    <p class="education__descr">
+                        <a href="https://app.rs.school/certificate/nnzdbvke" target="_blank">JS/FE Pre-School</a>
+                        <a href="https://rs.school/js/" target="_blank">JS/FE 2021Q3 (in proccess...)</a>
+                    </p>
+                </div>
             </section>
             <section class="skills">
                 <h2>Skills</h2>
@@ -51,16 +62,17 @@
                     <li class="skills__figma">Figma</li>
                 </ul>
             </section>
+            <section class="contacts">
+                <h2>Contacts</h2>
+                <div class="divider_yellow"></div>
+                <ul class="contacts__wrapper">
+                    <li class="contacts__phone"><a href="tel:+375299879647" target="_blank">Phone Number</a></li>
+                    <li class="contacts__e-mail"><a href="mailto:denisthecrowley@gmail.com" target="_blank">G-Mail</a></li>
+                    <li class="contacts__telegram"><a href="https://t.me/sasukevernisvderevny" target="_blank">Telegram</a></li>
+                </ul>
+            </section>            
         </aside>
         <main class="main">
-            <header class="header">
-                <div class="name">
-                    <span>Denis</span> Mythnik
-                </div>
-                <div class="prof">
-                    future front-end developer
-                </div>
-            </header>
             <div class="main__wrapper">
                 <section class="about">
                     <h2>About Me</h2>
@@ -87,14 +99,34 @@
                     <div class="divider_black"></div>
                     <pre>
                         <code>
-                            function bmi(weight, height) { <br>
-                                const bmi = weight/(height * height); <br>
-                                
-                                return bmi &lt;= 18.5 ? 'Underweight': bmi &lt;= 25 ? <br>
-                                'Normal': bmi &lt;= 30 ? 'Overweight': 'Obese'; <br>
-                                }
+    <span class="key-word">function</span> <span class="name">bmi</span><span class="brackets">(</span><span class="arguments">weight<span class="operators">,</span> height</span><span class="brackets">) {</span>  <br>
+        <span class="key-word">const</span> bmi <span class="operators">=</span> weight <span class="operators">/</span> <span class="brackets">(</span>height <span class="operators">*</span> height<span class="brackets">)</span><span class="operators">;</span> <br>
+        
+        <span class="key-word">return</span> bmi <span class="operators">&lt;=</span> <span class="arguments">18.5</span> <span class="operators">?</span> <span class="string"><span class="operators">'</span>Underweight<span class="operators">'</span></span> <span class="operators">:</span> bmi <span class="operators">&lt;=</span> <span class="arguments">25</span> <span class="operators">?</span> <br>
+        <span class="string"><span class="operators">'</span>Normal<span class="operators">'</span></span> <span class="operators">:</span> bmi <span class="operators">&lt;=</span> <span class="arguments">30</span> <span class="operators">?</span> <span class="string"><span class="operators">'</span>Overweight<span class="operators">'</span></span> <span class="operators">:</span> <span class="string"><span class="operators">'</span>Obese<span class="operators">'</span></span><span class="operators">;</span> <br>
+    <span class="brackets">}</span>
                         </code>
                     </pre>
+                </section>
+                <section class="projects">
+                    <h2>Projects</h2>
+                    <div class="divider_black"></div>
+                    <div class="projects__wrapper">
+                        <div class="projects__item">
+                            <a href="https://rolling-scopes-school.github.io/themrcrowley-JSFEPRESCHOOL/photofilter/" class="projects__link" target="_blank">
+                                <img src="img/photo-filter.png" alt="photo-filter" class="projects__img">
+                            </a>
+                            <h4 class="projects__title">Photo-Filter</h4>
+                            <div class="divider_hidden"></div>
+                        </div>
+                        <div class="projects__item">
+                            <a href="https://rolling-scopes-school.github.io/themrcrowley-JSFEPRESCHOOL/vertical-slider/" class="projects__link" target="_blank">
+                                <img src="img/vertical-slider.png" alt="vertical-slider" class="projects__img">
+                            </a>
+                            <h4 class="projects__title">Vertical-Slider</h4>
+                            <div class="divider_hidden"></div>
+                        </div>
+                    </div>
                 </section>
             </div>
             <footer class="footer">

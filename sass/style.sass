@@ -7,6 +7,7 @@ h2
     font-size: 24px
     font-weight: 600
     text-transform: uppercase
+    margin: 0
 
 h3
     font-size: 20px
@@ -28,110 +29,31 @@ body
     height: 100%
     margin: 0 auto
     display: flex
-    .aside
-        width: 30%
-        background-color: #202026
-        font-family: Montserrat
-        color: #fff
-        img
-            display: block
-            width: 100%
-            margin-bottom: 40px
-        .education
-            margin-left: 50px
-            margin-bottom: 40px
-            &__place
-                font-weight: 600
-                font-size: 20px
-            &__descr
-                padding-left: 20px
-                font-size: 16px
-                font-weight: 500
-                a
-                    transition: 0.5s all
-                    position: relative
-                    &::before
-                        content: ''
-                        display: block
-                        height: 32px
-                        width: 5px
-                        position: absolute
-                        left: -70px
-                        top: -8px
-                        background-color: #fecb00
-                        transition: 0.5s all                      
-                    &:hover
-                        color: #fff
-                        &::before
-                            width: 60px
-        .contacts
-            margin-left: 50px
-            margin-bottom: 40px
-            &__wrapper
-                padding-left: 20px
-                list-style: none
-            a
-                transition: 0.5s all
-                &:hover
-                    color: #fff
-            &__phone,
-            &__telegram,
-            &__e-mail
-                position: relative
-                transition: 0.5s all
-                &::before
-                    content: ''
-                    display: block
-                    height: 32px
-                    width: 5px
-                    position: absolute
-                    left: -70px
-                    top: -8px
-                    background-color: #fecb00
-                    transition: 0.5s all
-                &:hover
-                    &::before
-                        width: 60px
-        .skills
-            margin-left: 50px
-            &__list
-                list-style: none
-                padding: 0
-                color: #fecb00
-                line-height: 35px
-                li
-                    padding-left: 40px
-                    background-repeat: no-repeat
-                    background-size: 30px
-                    background-position: left center
-            &__html
-                background-image: url("../img/icons/html.svg")
-            &__css
-                background-image: url("../img/icons/css.svg")
-            &__sass
-                background-image: url("../img/icons/sass.svg")
-            &__bootstrap
-                background-image: url("../img/icons/bootstrap.svg")
-            &__javascript
-                background-image: url("../img/icons/javascript.svg")
-            &__github                
-                background-image: url("../img/icons/github.svg")
-            &__figma
-                background-image: url("../img/icons/figma.svg")
-               
-.main
-    width: 70%
+    overflow: hidden
+
+.header
+    display: flex
+    width: 100%
+    max-height: 350px
     font-family: Montserrat
+    background-color: #202026
     color: #2d2d2d
-    padding-top: 70px
-    background-color: #fff
-    .header
-        width: 100%
-        height: 200px
+    text-transform: uppercase
+    align-items: center
+    justify-content: space-between
+    &__photo
+        width: 30%
+        img
+            width: 100%
+    &__descr
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: center
         background-color: #fecb00
-        padding: 65px 50px
-        text-transform: uppercase
-        margin-bottom: 50px
+        width: 70%
+        height: 150px
+        padding-right: 10px
         .name
             font-size: 47px
             font-weight: 600
@@ -140,13 +62,112 @@ body
         .prof
             font-size: 20px
             font-weight: 500
+.aside
+    width: 30%
+    background-color: #202026
+    font-family: Montserrat
+    color: #fff
+    padding-top: 20px
+    display: flex
+    flex-direction: column
+    
+.education
+    margin-left: 50px
+    margin-bottom: 40px
+    &__place
+        font-weight: 600
+        font-size: 20px
+    &__descr
+        padding-left: 20px
+        font-size: 16px
+        font-weight: 500
+        a
+            transition: 0.5s all
+            position: relative
+            &::before
+                content: ''
+                display: block
+                height: 32px
+                width: 5px
+                position: absolute
+                left: -70px
+                top: -8px
+                background-color: #fecb00
+                transition: 0.5s all                      
+            &:hover
+                color: #fff
+                &::before
+                    width: 60px
+.contacts
+    margin-left: 50px
+    margin-bottom: 40px
+    &__wrapper
+        padding-left: 20px
+        list-style: none
+    a
+        transition: 0.5s all
+        &:hover
+            color: #fff
+    &__phone,
+    &__telegram,
+    &__e-mail,
+        position: relative
+        transition: 0.5s all
+        &::before
+            content: ''
+            display: block
+            height: 32px
+            width: 5px
+            position: absolute
+            left: -70px
+            top: -8px
+            background-color: #fecb00
+            transition: 0.5s all
+        &:hover
+            &::before
+                width: 60px
+.skills
+    margin-left: 50px
+    &__list
+        list-style: none
+        padding: 0
+        color: #fecb00
+        line-height: 35px
+        li
+            padding-left: 40px
+            background-repeat: no-repeat
+            background-size: 30px
+            background-position: left center
+    &__html
+        background-image: url("../img/icons/html.svg")
+    &__css
+        background-image: url("../img/icons/css.svg")
+    &__sass
+        background-image: url("../img/icons/sass.svg")
+    &__bootstrap
+        background-image: url("../img/icons/bootstrap.svg")
+    &__javascript
+        background-image: url("../img/icons/javascript.svg")
+    &__github                
+        background-image: url("../img/icons/github.svg")
+    &__figma
+        background-image: url("../img/icons/figma.svg")
+               
+.main
+    width: 70%
+    font-family: Montserrat
+    color: #2d2d2d
+    padding-top: 20px
+    background-color: #fff
     &__wrapper
         padding: 0px 60px
         .about
             font-size: 16px
             line-height: 28px
+            margin-bottom: 10px
             &__descr
                 text-align: justify
+                margin: 0
             &__strengths
                 padding: 0
                 list-style: circle
@@ -191,9 +212,41 @@ body
                         width: 250px
         .code-example
             line-height: 10px
-            code
-                position: relative
-                left: -200px
+            h2
+                line-height: 28px
+            pre
+                background-color: #1d2225 
+                color: #cdd3de  
+            .key-word
+                color: #c594bb
+            .name
+                color: #2867c1
+            .brackets
+                color: #ffc918
+            .arguments
+                color: #d67342
+            .operators
+                color: #5fb3b3
+            .string
+                color: #79c794
+        .projects
+            &__wrapper
+                display: flex
+                justify-content: space-between
+            &__item
+                width: 45%
+                text-align: center
+                transition: 0.5s all ease-in-out
+                &:hover
+                    transform: scale(1.15)
+                    .divider_hidden
+                        width: 100%
+            &__img
+                width: 100%
+            &__title
+                margin: 0
+            &__link
+                margin: 0
     .footer
         height: 200px
         background-color: #fecb00
@@ -214,10 +267,18 @@ body
     display: block
     height: 2px
     background-color: #fecb00
-    margin-bottom: 1em
+    margin-bottom: 16px
 
 .divider_black
     display: block
     height: 2px
     background-color: #2d2d2d
-    margin: 20px 0px
+    margin-bottom: 16px
+
+.divider_hidden
+    display: block
+    height: 2px
+    background-color: #2d2d2d
+    margin: 10px 0px 20px 0px
+    width: 0%
+    transition: 1s all ease-in-out
