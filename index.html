@@ -5,150 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     
-    <title>Denis Mythnik CV</title>
+    <title>Mythnik D. CV</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="header__photo"><img src="img/photo.png" alt="photo"></div>
-            <div class="header__descr">                
-                <div class="name">
-                    <span>Denis</span> Mythnik
-                </div>
-                <div class="prof">
-                    future front-end developer
+            <div class="header__descr">
+                <nav class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="#about" class="header-menu__link">About</a>
+                            <div class="divider_link"></div>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#code" class="header-menu__link">Code</a>
+                            <div class="divider_link"></div>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#projects" class="header-menu__link">Projects</a>
+                            <div class="divider_link"></div>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#skills" class="header-menu__link">Skills</a>
+                            <div class="divider_link"></div>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#contacts" class="header-menu__link">Contacts</a>
+                            <div class="divider_link"></div>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__title">
+                    <div class="header__name">
+                        <span>Denis</span> Mythnik
+                    </div>
+                    <div class="header__prof">
+                        future front-end developer
+                    </div>
                 </div>
             </div>
+            <div class="burger-btn">
+                <span class="burger-btn__row"></span>
+                <span class="burger-btn__row"></span>
+                <span class="burger-btn__row"></span>
+            </div>            
         </header>
     </div>
     <div class="container">
-        <aside class="aside">
-            <section class="education">
-                <h2>Education</h2>
-                <div class="divider_yellow"></div>
-                <div class="education__place">
-                    Belarusian National Technical University
-                    <p class="education__descr">
-                        Micro- and nanosystem technology
-                    </p>
-                </div>
-                <div class="education__place">
-                    Udemy
-                    <p class="education__descr">
-                        <a href="https://www.udemy.com/course/webdeveloper/" target="_blank">HTML/CSS</a>                    
-                        <a href="https://www.udemy.com/course/javascript_full/" target="_blank">JavaScript (in proccess...)</a>
-                    </p>
-                </div>
-                <div class="education__place">
-                    RS School
-                    <p class="education__descr">
-                        <a href="https://app.rs.school/certificate/nnzdbvke" target="_blank">JS/FE Pre-School</a>
-                        <a href="https://rs.school/js/" target="_blank">JS/FE 2021Q3 (in proccess...)</a>
-                    </p>
-                </div>
-            </section>
-            <section class="skills">
-                <h2>Skills</h2>
-                <div class="divider_yellow"></div>
-                <ul class="skills__list">
-                    <li class="skills__html">HTML</li>
-                    <li class="skills__css">CSS</li>
-                    <li class="skills__sass">SASS</li>
-                    <li class="skills__bootstrap">Bootstrap</li>
-                    <li class="skills__javascript">JavaScript</li>
-                    <li class="skills__github">GitHub</li>
-                    <li class="skills__figma">Figma</li>
-                </ul>
-            </section>
-            <section class="contacts">
-                <h2>Contacts</h2>
-                <div class="divider_yellow"></div>
-                <ul class="contacts__wrapper">
-                    <li class="contacts__phone"><a href="tel:+375299879647" target="_blank">Phone Number</a></li>
-                    <li class="contacts__e-mail"><a href="mailto:denisthecrowley@gmail.com" target="_blank">G-Mail</a></li>
-                    <li class="contacts__telegram"><a href="https://t.me/sasukevernisvderevny" target="_blank">Telegram</a></li>
-                </ul>
-            </section>            
-        </aside>
-        <main class="main">
-            <div class="main__wrapper">
-                <section class="about">
-                    <h2>About Me</h2>
-                    <div class="divider_black"></div>
-                    <p class="about__descr">
-                        I am 23 years old, I work as a design engineer. I think that my actual job will lead me to stagnation some day or other. I really need in activities where I can develop during my life. That is why I`m here. My goal is to gain knowledge in the field of front-end development.
-                    </p>
-                    <h3>My strengths:</h3>
-                    <ul class="about__strengths">                            
-                        <li>Quick learner</li>
-                        <li>Full immersion in the essence of the problems</li>
-                        <li>Diligence</li>
-                        <li>Team playing</li>
-                    </ul>
-                    <h3>Languages</h3>
-                    <ul class="about__languages">                            
-                        <li>Russian - native speaker</li>
-                        <li>English - A2 (B1 in proccess...)</li>
-                    </ul>
-                    <div class="quote"><a href="https://roadmap.sh/frontend" target="_blank">Keep learning...</a></div>
+        <div class="main-container">
+            <aside class="aside">
+                <section class="education">
+                    <h2 class="h2">Education</h2>
+                    <div class="divider_yellow"></div>
+                    <div class="education__place">
+                        Belarusian National Technical University
+                        <p class="education__descr">
+                            Micro- and nanosystem technology
+                        </p>
+                        <div class="divider_yellow"></div>
+                    </div>
+                    <div class="education__place">
+                        Udemy
+                        <p class="education__descr">
+                            <a href="https://www.udemy.com/course/webdeveloper/" target="_blank" class="education__link">HTML/CSS</a>                    
+                            <a href="https://www.udemy.com/course/javascript_full/" target="_blank" class="education__link">JavaScript (in proccess...)</a>
+                        </p>
+                        <div class="divider_yellow"></div>
+                    </div>
+                    <div class="education__place">
+                        RS School
+                        <p class="education__descr">
+                            <a href="https://app.rs.school/certificate/nnzdbvke" target="_blank" class="education__link">JS/FE Pre-School</a>
+                            <a href="https://rs.school/js/" target="_blank" class="education__link">JS/FE 2021Q3 (in proccess...)</a>
+                        </p>
+                        <div class="divider_yellow"></div>
+                    </div>
                 </section>
-                <section class="code-example">
-                    <h2>Code example</h2>
-                    <div class="divider_black"></div>
-                    <pre>
-                        <code>
+                <section class="skills" id="skills">
+                    <h2 class="h2">Skills</h2>
+                    <div class="divider_yellow"></div>
+                    <ul class="skills__list">
+                        <li class="skills__item skills__html">HTML</li>
+                        <li class="skills__item skills__css">CSS</li>
+                        <li class="skills__item skills__sass">SASS</li>
+                        <li class="skills__item skills__bootstrap">Bootstrap</li>
+                        <li class="skills__item skills__javascript">JavaScript</li>
+                        <li class="skills__item skills__github">GitHub</li>
+                        <li class="skills__item skills__figma">Figma</li>
+                    </ul>
+                </section>            
+            </aside>
+            <main class="main">
+                <div class="main__wrapper">
+                    <section class="about" id="about">
+                        <h2 class="h2">About Me</h2>
+                        <div class="divider_black"></div>
+                        <p class="about__descr">
+                            I am 23 years old, I work as a design engineer. I think that my actual job will lead me to stagnation some day or other. I really need in activities where I can develop during my life. That is why I`m here. My goal is to gain knowledge in the field of front-end development.
+                        </p>
+                        <h3 class="h3">My strengths:</h3>
+                        <ul class="about__strengths">                            
+                            <li>Quick learner</li>
+                            <li>Full immersion in the essence of the problems</li>
+                            <li>Diligence</li>
+                            <li>Team playing</li>
+                        </ul>
+                        <h3 class="h3">Languages</h3>
+                        <ul class="about__languages">                            
+                            <li>Russian - native speaker</li>
+                            <li>English - A2 (B1 in proccess...)</li>
+                        </ul>
+                        <div class="quote"><a href="https://roadmap.sh/frontend" target="_blank">Keep learning...</a></div>
+                    </section>
+                    <section class="code-example" id="code">
+                        <h2 class="h2">Code example</h2>
+                        <div class="divider_black"></div>
+                        <pre>
+                            <code>
     <span class="key-word">function</span> <span class="name">bmi</span><span class="brackets">(</span><span class="arguments">weight<span class="operators">,</span> height</span><span class="brackets">) {</span>  <br>
         <span class="key-word">const</span> bmi <span class="operators">=</span> weight <span class="operators">/</span> <span class="brackets">(</span>height <span class="operators">*</span> height<span class="brackets">)</span><span class="operators">;</span> <br>
         
         <span class="key-word">return</span> bmi <span class="operators">&lt;=</span> <span class="arguments">18.5</span> <span class="operators">?</span> <span class="string"><span class="operators">'</span>Underweight<span class="operators">'</span></span> <span class="operators">:</span> bmi <span class="operators">&lt;=</span> <span class="arguments">25</span> <span class="operators">?</span> <br>
         <span class="string"><span class="operators">'</span>Normal<span class="operators">'</span></span> <span class="operators">:</span> bmi <span class="operators">&lt;=</span> <span class="arguments">30</span> <span class="operators">?</span> <span class="string"><span class="operators">'</span>Overweight<span class="operators">'</span></span> <span class="operators">:</span> <span class="string"><span class="operators">'</span>Obese<span class="operators">'</span></span><span class="operators">;</span> <br>
     <span class="brackets">}</span>
-                        </code>
-                    </pre>
-                </section>
-                <section class="projects">
-                    <h2>Projects</h2>
-                    <div class="divider_black"></div>
-                    <div class="projects__wrapper">
-                        <div class="projects__item">
-                            <a href="https://rolling-scopes-school.github.io/themrcrowley-JSFEPRESCHOOL/photofilter/" class="projects__link" target="_blank">
-                                <img src="img/photo-filter.png" alt="photo-filter" class="projects__img">
-                            </a>
-                            <h4 class="projects__title">Photo-Filter</h4>
-                            <div class="divider_hidden"></div>
+                            </code>
+                        </pre>
+                    </section>
+                    <section class="projects" id="projects">
+                        <h2 class="h2">Projects</h2>
+                        <div class="divider_black"></div>
+                        <div class="projects__wrapper">
+                            <div class="projects__item">
+                                <a href="https://rolling-scopes-school.github.io/themrcrowley-JSFEPRESCHOOL/photofilter/" class="projects__link" target="_blank">
+                                    <img src="img/photo-filter.png" alt="photo-filter" class="projects__img">
+                                    <h4 class="projects__title">Photo-Filter</h4>
+                                </a>
+                                <div class="divider_hidden"></div>
+                            </div>
+                            <div class="projects__item">
+                                <a href="https://rolling-scopes-school.github.io/themrcrowley-JSFEPRESCHOOL/vertical-slider/" class="projects__link" target="_blank">
+                                    <img src="img/vertical-slider.png" alt="vertical-slider" class="projects__img">
+                                    <h4 class="projects__title">Vertical-Slider</h4>
+                                </a>                                
+                                <div class="divider_hidden"></div>
+                            </div>
                         </div>
-                        <div class="projects__item">
-                            <a href="https://rolling-scopes-school.github.io/themrcrowley-JSFEPRESCHOOL/vertical-slider/" class="projects__link" target="_blank">
-                                <img src="img/vertical-slider.png" alt="vertical-slider" class="projects__img">
-                            </a>
-                            <h4 class="projects__title">Vertical-Slider</h4>
-                            <div class="divider_hidden"></div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
+                </div>            
+            </main>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-container">
+            <section class="contacts" id="contacts">
+                <h2 class="h2">Contacts</h2>
+                <div class="divider_yellow"></div>
+                <ul class="contacts__wrapper">
+                    <li class="contacts__item contacts__phone"><a href="tel:+375299879647" target="_blank">Phone</a></li>
+                    <li class="contacts__item contacts__e-mail"><a href="mailto:denisthecrowley@gmail.com" target="_blank">E-Mail</a></li>
+                    <li class="contacts__item contacts__telegram"><a href="https://t.me/sasukevernisvderevny" target="_blank">Telegram</a></li>
+                </ul>
+            </section>
             <footer class="footer">
-                <div>
+                <div class="footer__item">
                     <a href="https://github.com/TheMrCrowley" target="_blank">
-                        <img src="img/icons/github.svg" alt="github_icon">
+                        <img src="img/icons/github.svg" alt="github_icon" class="footer__image">
                     </a>
                 </div>
-                <div>
+                <div class="footer__item">
                     <a href="https://rs.school/js/" target="_blank">
-                        <img src="img/icons/rs_school_js.svg" alt="rs-school-logo">
+                        <img src="img/icons/rs_school_js.svg" alt="rs-school-logo" class="footer__image">
                     </a>
                 </div>
-                <div class="date">
+                <div class="footer__date">
                     <p>
                         Created <br> 
-                        in <br>
-                        2021
+                        in 2021
                     </p>
                 </div>
             </footer>
-        </main>
+        </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

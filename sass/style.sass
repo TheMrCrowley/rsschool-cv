@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600&display=swap')
+
+html
+    scroll-behavior: smooth
 
 *
+    font-family: Montserrat
     box-sizing: border-box
 
-h2
+.h2
     font-size: 24px
     font-weight: 600
     text-transform: uppercase
     margin: 0
 
-h3
+.h3
     font-size: 20px
     text-transform: uppercase
     margin: 0
@@ -26,16 +30,13 @@ body
 
 .container
     width: 1000px
-    height: 100%
     margin: 0 auto
-    display: flex
     overflow: hidden
 
 .header
     display: flex
     width: 100%
     max-height: 350px
-    font-family: Montserrat
     background-color: #202026
     color: #2d2d2d
     text-transform: uppercase
@@ -48,32 +49,61 @@ body
     &__descr
         display: flex
         flex-direction: column
-        align-items: flex-end
-        justify-content: center
-        background-color: #fecb00
+        justify-content: space-between
         width: 70%
-        height: 150px
-        padding-right: 10px
-        .name
-            font-size: 47px
-            font-weight: 600
-            span
-                font-weight: 800
-        .prof
-            font-size: 20px
-            font-weight: 500
+        min-height: 150px
+    &-menu
+        min-height: 40px
+        background-color: #fecb00
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        &__list
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            list-style: none
+            margin: 0
+        &__item
+            margin-right: 35px
+            &:hover
+                .divider_link
+                    width: 100%
+        &__link
+            margin: 0
+            color: #202026
+            transition: 0.5s all ease-in-out
+    &__title
+        background-color: #fecb00
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        padding-right: 10px   
+        min-height: 80px     
+    &__name
+        font-size: 47px
+        font-weight: 600
+        span
+            font-weight: 800
+    &__prof
+        font-size: 20px
+        font-weight: 500
+.burger-btn
+    display: none
+
+.main-container
+    display: flex
+
 .aside
     width: 30%
     background-color: #202026
-    font-family: Montserrat
     color: #fff
-    padding-top: 20px
+    padding: 20px 0 195px 50px
     display: flex
     flex-direction: column
+    justify-content: space-between
     
 .education
-    margin-left: 50px
-    margin-bottom: 40px
     &__place
         font-weight: 600
         font-size: 20px
@@ -81,26 +111,155 @@ body
         padding-left: 20px
         font-size: 16px
         font-weight: 500
-        a
-            transition: 0.5s all
-            position: relative
+        margin-bottom: 0
+    &__link
+        transition: 0.5s all
+        position: relative
+        &::before
+            content: ''
+            display: block
+            height: 32px
+            width: 5px
+            position: absolute
+            left: -70px
+            top: -8px
+            background-color: #fecb00
+            transition: 0.5s all                      
+        &:hover
+            color: #fff
             &::before
-                content: ''
-                display: block
-                height: 32px
-                width: 5px
-                position: absolute
-                left: -70px
-                top: -8px
-                background-color: #fecb00
-                transition: 0.5s all                      
-            &:hover
-                color: #fff
-                &::before
-                    width: 60px
+                width: 50px
+
+.skills
+    &__list
+        list-style: none
+        padding: 0
+        color: #fecb00
+        line-height: 35px
+    &__item
+        padding-left: 40px
+        background-repeat: no-repeat
+        background-size: 30px
+        background-position: left center
+    &__html
+        background-image: url("../img/icons/html.svg")
+    &__css
+        background-image: url("../img/icons/css.svg")
+    &__sass
+        background-image: url("../img/icons/sass.svg")
+    &__bootstrap
+        background-image: url("../img/icons/bootstrap.svg")
+    &__javascript
+        background-image: url("../img/icons/javascript.svg")
+    &__github
+        background-image: url("../img/icons/github.svg")
+    &__figma
+        background-image: url("../img/icons/figma.svg")
+               
+.main
+    width: 70%
+    color: #2d2d2d
+    padding-top: 20px
+    background-color: #fff
+    &__wrapper
+        padding: 0px 60px
+.about
+    font-size: 16px
+    line-height: 28px
+    &__descr
+        text-align: justify
+        margin: 0
+    &__strengths
+        margin: 0 0 10px 0
+        padding: 10px 0 0 30px
+        list-style: circle
+    &__languages
+        margin: 0 0 20px 0
+        padding: 10px 0 0 30px
+        list-style: circle
+.quote
+    text-align: center
+    font-size: 20px
+    font-weight: 600
+    position: relative
+    a
+        color: #2d2d2d
+    &::before
+        content: ''
+        display: block
+        width: 5px
+        height: 32px
+        position: absolute
+        left: -60px
+        top: -2px
+        background-color: #fecb00
+        transition: 0.5s all
+    &::after
+        content: ''
+        display: block
+        width: 5px
+        height: 32px
+        position: absolute
+        right: -60px
+        top: -2px
+        background-color: #fecb00
+        transition: 0.5s all
+    &:hover
+        &::before
+            width: 250px
+        &::after
+            width: 250px
+
+.code-example
+    .h2
+        line-height: 28px
+    pre
+        background-color: #202026
+        color: #cdd3de
+        font-weight: 300
+        font-size: 14px
+    .key-word
+        color: #c594bb
+    .name
+        color: #2867c1
+    .brackets
+        color: #ffc918
+    .arguments
+        color: #d67342
+    .operators
+        color: #5fb3b3
+    .string
+        color: #79c794
+
+.projects
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 45%
+        text-align: center
+        transition: 0.5s all ease-in-out
+        &:hover
+            transform: scale(1.15)
+            .divider_hidden
+                width: 100%
+    &__img
+        width: 100%
+    &__title
+        margin: 0
+        color: #202026
+        text-transform: uppercase
+    &__link
+        margin: 0
+
+.footer-container
+    display: flex
+
 .contacts
-    margin-left: 50px
-    margin-bottom: 40px
+    background-color: #202026
+    width: 30%
+    color: #fff
+    padding-left: 50px
     &__wrapper
         padding-left: 20px
         list-style: none
@@ -108,9 +267,7 @@ body
         transition: 0.5s all
         &:hover
             color: #fff
-    &__phone,
-    &__telegram,
-    &__e-mail,
+    &__item
         position: relative
         transition: 0.5s all
         &::before
@@ -126,154 +283,35 @@ body
         &:hover
             &::before
                 width: 60px
-.skills
-    margin-left: 50px
-    &__list
-        list-style: none
-        padding: 0
-        color: #fecb00
-        line-height: 35px
-        li
-            padding-left: 40px
-            background-repeat: no-repeat
-            background-size: 30px
-            background-position: left center
-    &__html
-        background-image: url("../img/icons/html.svg")
-    &__css
-        background-image: url("../img/icons/css.svg")
-    &__sass
-        background-image: url("../img/icons/sass.svg")
-    &__bootstrap
-        background-image: url("../img/icons/bootstrap.svg")
-    &__javascript
-        background-image: url("../img/icons/javascript.svg")
-    &__github                
-        background-image: url("../img/icons/github.svg")
-    &__figma
-        background-image: url("../img/icons/figma.svg")
-               
-.main
+
+.footer
     width: 70%
-    font-family: Montserrat
-    color: #2d2d2d
-    padding-top: 20px
-    background-color: #fff
-    &__wrapper
-        padding: 0px 60px
-        .about
-            font-size: 16px
-            line-height: 28px
-            margin-bottom: 10px
-            &__descr
-                text-align: justify
-                margin: 0
-            &__strengths
-                padding: 0
-                list-style: circle
-                li
-                    margin-left: 40px
-            &__languages
-                padding: 0
-                list-style: circle
-                li
-                    margin-left: 40px                
-            .quote
-                text-align: center
-                font-size: 20px
-                font-weight: 600
-                position: relative
-                a
-                    color: #2d2d2d
-                &::before
-                    content: ''
-                    display: block
-                    width: 5px
-                    height: 32px
-                    position: absolute
-                    left: -60px
-                    top: -2px
-                    background-color: #fecb00
-                    transition: 0.5s all
-                &::after
-                    content: ''
-                    display: block
-                    width: 5px
-                    height: 32px
-                    position: absolute
-                    right: -60px
-                    top: -2px
-                    background-color: #fecb00
-                    transition: 0.5s all
-                &:hover
-                    &::before
-                        width: 250px
-                    &::after
-                        width: 250px
-        .code-example
-            line-height: 10px
-            h2
-                line-height: 28px
-            pre
-                background-color: #1d2225 
-                color: #cdd3de  
-            .key-word
-                color: #c594bb
-            .name
-                color: #2867c1
-            .brackets
-                color: #ffc918
-            .arguments
-                color: #d67342
-            .operators
-                color: #5fb3b3
-            .string
-                color: #79c794
-        .projects
-            &__wrapper
-                display: flex
-                justify-content: space-between
-            &__item
-                width: 45%
-                text-align: center
-                transition: 0.5s all ease-in-out
-                &:hover
-                    transform: scale(1.15)
-                    .divider_hidden
-                        width: 100%
-            &__img
-                width: 100%
-            &__title
-                margin: 0
-            &__link
-                margin: 0
-    .footer
-        height: 200px
-        background-color: #fecb00
-        display: flex
-        align-items: center
-        justify-content: space-around
-        div
-            height: 100px
-            img
-                display: block
-                margin: 0 auto
-                height: 100px
-        .date
-            font-size: 25px
-            font-weight: 600
+    max-height: 200px
+    background-color: #fecb00
+    display: flex
+    align-items: center
+    justify-content: space-around
+    &__item
+        height: 100px
+    &__image
+        display: block
+        margin: 0 auto
+        height: 100px
+    &__date
+        font-size: 25px
+        font-weight: 600
             
 .divider_yellow
     display: block
     height: 2px
     background-color: #fecb00
-    margin-bottom: 16px
+    margin-bottom: 20px
 
 .divider_black
     display: block
     height: 2px
     background-color: #2d2d2d
-    margin-bottom: 16px
+    margin-bottom: 20px
 
 .divider_hidden
     display: block
@@ -282,3 +320,12 @@ body
     margin: 10px 0px 20px 0px
     width: 0%
     transition: 1s all ease-in-out
+
+.divider_link
+    display: block
+    height: 2px
+    background-color: #2d2d2d
+    width: 0%
+    transition: 0.5s all ease-in-out
+
+@import _media

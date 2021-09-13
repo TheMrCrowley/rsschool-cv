@@ -1,0 +1,264 @@
+@media ( max-width: 768px )
+    .container
+        max-width: 768px
+    .header
+        max-height: 270px
+        &__photo
+            border-radius: 30px
+            overflow: hidden
+            max-height: 270px
+    .header-menu
+        justify-content: center
+    .header__title
+        align-items: center
+        background-color: #202026
+        color: #fff
+    .main-container
+        flex-direction: column
+    .aside
+        font-size: 18px
+        flex-direction: row
+        width: 100%
+        padding: 20px 40px
+    .education
+        margin: 0
+        &__descr
+            margin: 10px 0
+            font-size: 18px
+        &__link
+            &::before
+                left: -60px
+    .skills
+        margin: 0
+        text-align: right
+        &__item
+            padding: 0
+            padding-right: 40px
+            background-position: right center
+    .main
+        width: 100%
+    .about
+        font-size: 18px
+        &__descr
+            margin-bottom: 10px
+    .h2
+        font-size: 30px
+    .h3
+        font-size: 24px
+        margin: 0
+        
+    .quote
+        font-size: 26px
+
+    .contacts
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+
+@media (max-width: 425px)
+    .h2
+        font-size: 20px
+    .container
+        max-width: 100%
+    .header
+        position: relative
+        background-color: #202026
+        &__photo
+            width: 50%
+            max-height: 250px
+            border-radius: 20px
+            overflow: hidden
+        &__descr
+            background-color: #fecb00
+            width: 50%
+            min-height: 100px
+            justify-content: center
+            overflow: hidden
+        &__title
+            background-color: #fecb00
+            color: #202026
+            justify-content: center
+            text-align: right
+        &__name
+            font-size: 24px
+        &__prof
+            font-size: 14px
+    .header-menu
+        position: absolute
+        left: -50%
+        width: 50%
+        transition: 1s left ease-in-out
+        background-color: rgba(32, 32, 38, .5)
+        &_active
+            left: 0%
+        &__list
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            height: 250px
+            width: 100%
+            padding: 0
+        &__item
+            margin: 0
+            &:hover
+                .header-menu__link
+                    color: #fecb00
+        &__link
+            color: #fff
+    .burger-btn
+        display: block
+        position: absolute 
+        right: 5%
+        top: 10%
+        transform: translateY(-50%)
+        width: 30px
+        height: 20px
+        cursor: pointer
+        &__row
+            display: block
+            height: 3px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+            transition: 0.5s
+        &_active
+            .burger-btn__row
+                margin-bottom: -3px 
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    opacity: 0
+                &:nth-child(3)
+                    transform: rotate(45deg)
+
+    .aside
+        padding: 10px
+    .education
+        &__place
+            font-size: 16px
+        &__descr
+            font-size: 16px
+        &__link
+            &::before
+                height: 25px
+                width: 2px
+                left: -30px
+                top: -5px                  
+            &:hover
+                color: #fff
+                &::before
+                    width: 20px
+    .skills
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        &__list
+            margin: 0
+        &__item
+            font-size: 16px
+
+    .main
+        padding-top: 10px
+        &__wrapper
+            padding: 0 20px
+    .quote
+        &::before
+            left: -20px
+            
+        &::after
+            right: -20px
+        &:hover
+            &::before
+                width: 80px
+            &::after
+                width: 80px
+    
+    .code-example
+        pre
+            font-size: 10px
+
+    .projects
+        &__item
+            width: 80%
+        &__wrapper
+            flex-direction: column
+            align-items: center
+
+    .footer-container
+        flex-direction: column
+    .contacts        
+        padding: 10px
+        width: 100%
+        align-items: center
+        .divider_yellow
+            width: 100%
+        &__wrapper
+            display: flex
+            margin: 0
+            padding: 0
+            width: 100%
+            justify-content: space-between
+        &__item
+            &::before
+                height: 2px
+                width: 0%
+                top: 60%
+                left: 0px
+            &:hover
+                &::before
+                    width: 100%
+    .footer
+        width: 100%
+        &__item
+            max-height: 70px
+        &__image
+            height: 70px
+    .divider_yellow
+        margin-bottom: 10px
+        width: 90%
+    .divider_link
+        background-color: #fecb00
+
+@media (max-width: 375px)
+    .h3
+        font-size: 18px
+    .h2
+        font-size: 18px
+    .header-menu__list 
+        height: 230px
+    .code-example
+        pre
+            font-size: 8px
+    .education__place
+        font-size: 14px
+    .education__descr
+        font-size: 14px
+    .skills__item
+        font-size: 14px
+    .about__descr
+        font-size: 14px
+    .about__strengths
+        padding-top: 0
+    .about__languages
+        padding-top: 0
+    .footer
+        &__item
+            max-height: 60px
+        &__image
+            height: 60px
+        &__date
+            font-size: 18px
+
+@media ( max-width: 320px )
+    .header-menu__list
+        height: 200px
+    .quote
+        &:hover
+            &::before
+                width: 50px
+            &::after
+                width: 50px
+    .code-example
+        pre
+            font-size: 9px
+    
