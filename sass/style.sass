@@ -29,7 +29,7 @@ body
     background-color: #111
 
 .container
-    width: 1000px
+    max-width: 1000px
     margin: 0 auto
     overflow: hidden
 
@@ -44,8 +44,11 @@ body
     justify-content: space-between
     &__photo
         width: 30%
+        border-radius: 30px
+        overflow: hidden
+        max-height: 350px
         img
-            width: 100%
+            width: 100%            
     &__descr
         display: flex
         flex-direction: column

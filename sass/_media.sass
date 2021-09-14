@@ -1,6 +1,6 @@
 @media ( max-width: 768px )
     .container
-        max-width: 768px
+        width: 768px
     .header
         max-height: 270px
         &__photo
@@ -16,10 +16,20 @@
     .main-container
         flex-direction: column
     .aside
+        position: relative
         font-size: 18px
         flex-direction: row
         width: 100%
         padding: 20px 40px
+        &::before
+            content:''
+            display: block
+            position: absolute
+            height: 3px
+            background-color: #fecb00
+            width: 100%
+            left: 0
+            bottom: 0px
     .education
         margin: 0
         &__descr
@@ -54,6 +64,89 @@
         display: flex
         flex-direction: column
         justify-content: flex-end
+
+@media ( max-width: 576px )
+    .h3
+        font-size: 22px
+    .h2
+        font-size: 28px
+    .container
+        max-width: 576px
+    .header-menu
+        &__list
+            width: 100%
+            padding: 0
+            justify-content: space-around
+            font-size: 14px
+        &__item
+            margin: 0
+    .header__name
+        font-size: 42px
+    .aside
+        padding: 0
+    .education
+        width: 55%
+        &__place
+            font-size: 18px
+        &__descr
+            font-size: 16px
+        &__link
+            &::before
+                display: none
+    .skills__list
+        margin: 0
+    .main
+        padding: 0
+        &__wrapper
+            padding: 0
+    .about
+        font-size: 16px
+    .about__descr
+        padding: 0 10px
+    .quote
+        &::before
+            left: 0px            
+        &::after
+            right: 0px
+        &:hover
+            &::before
+                width: 120px
+            &::after
+                width: 120px
+    .projects__wrapper
+        padding: 0 20px
+    .footer-container
+        flex-direction: column
+    .contacts        
+        padding: 10px
+        width: 100%
+        align-items: center
+        .divider_yellow
+            width: 100%
+        &__wrapper
+            display: flex
+            margin: 0
+            padding: 0
+            width: 100%
+            justify-content: space-between
+        &__item
+            &::before
+                height: 2px
+                width: 0%
+                top: 60%
+                left: 0px
+            &:hover
+                &::before
+                    width: 100%
+    .footer
+        width: 100%
+        &__item
+            max-height: 70px
+        &__image
+            height: 70px
+
+    .divider_yellow
+        margin-bottom: 10px
 
 @media (max-width: 425px)
     .h2
@@ -130,14 +223,12 @@
                     opacity: 0
                 &:nth-child(3)
                     transform: rotate(45deg)
-
-    .aside
-        padding: 10px
     .education
+        width: 60%
         &__place
             font-size: 16px
         &__descr
-            font-size: 16px
+            font-size: 14px
         &__link
             &::before
                 height: 25px
@@ -149,24 +240,11 @@
                 &::before
                     width: 20px
     .skills
-        display: flex
-        flex-direction: column
-        align-items: flex-end
         &__list
             margin: 0
         &__item
             font-size: 16px
-
-    .main
-        padding-top: 10px
-        &__wrapper
-            padding: 0 20px
     .quote
-        &::before
-            left: -20px
-            
-        &::after
-            right: -20px
         &:hover
             &::before
                 width: 80px
@@ -183,39 +261,8 @@
         &__wrapper
             flex-direction: column
             align-items: center
-
-    .footer-container
-        flex-direction: column
-    .contacts        
-        padding: 10px
-        width: 100%
-        align-items: center
-        .divider_yellow
-            width: 100%
-        &__wrapper
-            display: flex
-            margin: 0
-            padding: 0
-            width: 100%
-            justify-content: space-between
-        &__item
-            &::before
-                height: 2px
-                width: 0%
-                top: 60%
-                left: 0px
-            &:hover
-                &::before
-                    width: 100%
-    .footer
-        width: 100%
-        &__item
-            max-height: 70px
-        &__image
-            height: 70px
     .divider_yellow
         margin-bottom: 10px
-        width: 90%
     .divider_link
         background-color: #fecb00
 
@@ -229,18 +276,24 @@
     .code-example
         pre
             font-size: 8px
+    .education
+        width: 55%
+    .skills
+        width: 35%
     .education__place
         font-size: 14px
     .education__descr
-        font-size: 14px
+        font-size: 12px
     .skills__item
         font-size: 14px
     .about__descr
         font-size: 14px
     .about__strengths
         padding-top: 0
+        font-size: 16px
     .about__languages
         padding-top: 0
+        font-size: 16px
     .footer
         &__item
             max-height: 60px
@@ -252,6 +305,14 @@
 @media ( max-width: 320px )
     .header-menu__list
         height: 200px
+    .education
+        width: 57%
+    .education__descr
+        font-size: 12px
+        padding-left: 12px
+    .education__link
+        &::before
+            left: -22px
     .quote
         &:hover
             &::before
